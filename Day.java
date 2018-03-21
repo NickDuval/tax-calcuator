@@ -29,28 +29,9 @@ public class Day{
 		controlPanel.setLayout(new FlowLayout());
 	}
 
-
-	public void wageButton(){
-		wage.addActionListerner(new ActionListener(){
-			public void actionPreformed(ActionEvent a){
-				add.JTFwage();
-				}
-			}
-		});
-	}
-
-	public void incomeButton(){
-		wage.addActionListerner(new ActionListener(){
-			public void actionPreformed(ActionEvent b){
-				add.JTFincome();
-				}
-			}
-		});
-	}
-
 	public void doneButton(){
 		done.addActionListerner(new ActionListener(){
-			public void actionPreformed(ActionEvent e){
+			public void actionPreformed(ActionEvent a){
 				//do the calculation take in all the info
 			}
 		});
@@ -58,16 +39,14 @@ public class Day{
 
 	public static void main(String[] args){
 		if(JBwage = true){
+			JBincome = false;
 			add.done;
-			wageButton;
+			add.JTFwage;
 		}
 		if(JBincome = true){
+			JBwage = false;
 			add.done;
-			incomeButton;
+			add.JTFincome;
 		}
-		if(JBincome && JBwage = true){
-			return error;                               //registers as an error
-		}
-
 	}
 }
