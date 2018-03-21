@@ -2,46 +2,72 @@ import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.io.*;
+
 
 public class Day{
-	/*
-	private Scanner in = new Scanner(System.in); //clock in time
-	private Scanner out = new Scanner(System.in); //clock out time
-	private Scanner wage = new Scanner(System.in); //hourly wage
-	private Scanner income = new Scanner(System.in); //yearly income  
-	*/
+
 	private JFrame day = new JFrame();
 	private JPanel controlPanel = new JPanel();
-	private JLabel w = new JLabel("calculate with hourly wage", JLabel);
-	private JLabel i = new JLabel("calculate with yearly income", JLabel);
-	private JButton wage = new JButton("wage", JButton.CENTER); //button to choose whether or not to use hourly wage	
-	private JButton income = new JButton("income", JButton.CENTER); //or yearly income
-	private JTextField hourlyWage = new JTextField(); //textbox 
-	private JTextField yearlyIncome = new JTextField();
+	private JLabel JLwage = new JLabel("calculate with hourly wage", JLabel);
+	private JLabel JLincome = new JLabel("calculate with yearly income", JLabel);
+	private JButton JBwage = new JButton("wage", JButton.CENTER); //button to choose whether or not to use hourly wage	
+	private JButton JBincome = new JButton("income", JButton.CENTER); //or yearly income
+	private JButton done = new JButton("done");
+	private JTextField JTFwage = new JTextField(10); //textbox 
+	private JTextField JTFincome = new JTextField(10);
+	boolean buttonClick = false;
 
 	public void setup(){
 		day = new JFrame("Day");
 		day.setVisible(true);
 		day.setSize(500,500);
 		day.add(controlPanel);
-		day.add.setVisible(true);
+		day.setVisible(true);
 
 		controlPanel = new JPanel();
 		controlPanel.setLayout(new FlowLayout());
-}
-	public void window(){
-		controlPanel.add(wage);
-		controlPanel.add(userText);
-		controlPanel.add(income);
-		controlPanel.add(userText);
-
 	}
 
-	public void button(){
+
+	public void wageButton(){
 		wage.addActionListerner(new ActionListener(){
 			public void actionPreformed(ActionEvent a){
-				add.hourlyWage();
+				add.JTFwage();
+				}
 			}
 		});
+	}
+
+	public void incomeButton(){
+		wage.addActionListerner(new ActionListener(){
+			public void actionPreformed(ActionEvent b){
+				add.JTFincome();
+				}
+			}
+		});
+	}
+
+	public void doneButton(){
+		done.addActionListerner(new ActionListener(){
+			public void actionPreformed(ActionEvent e){
+				//do the calculation take in all the info
+			}
+		});
+	}
+
+	public static void main(String[] args){
+		if(JBwage = true){
+			add.done;
+			wageButton;
+		}
+		if(JBincome = true){
+			add.done;
+			incomeButton;
+		}
+		if(JBincome && JBwage = true){
+			return error;                               //registers as an error
+		}
+
 	}
 }
