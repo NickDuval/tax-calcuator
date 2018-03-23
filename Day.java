@@ -7,7 +7,7 @@ import java.io.*;
 
 public class Day{
 
-	private JFrame day = new JFrame();
+	private JFrame day = new JFrame(JFrame.EXIT_ON_CLOSE);
 	private JPanel controlPanel = new JPanel();
 	private JLabel JLwage = new JLabel("calculate with hourly wage", JLabel);
 	private JLabel JLincome = new JLabel("calculate with yearly income", JLabel);
@@ -18,12 +18,18 @@ public class Day{
 	private JTextField JTFincome = new JTextField(10);
 	boolean buttonClick = false;
 
+	public void hash(){
+		HashMap csv = new HashMap();
+		
+	}
+
 	public void setup(){
+		day.setLayout(new GridLayout(3,1));
 		day = new JFrame("Day");
 		day.setVisible(true);
 		day.setSize(500,500);
 		day.add(controlPanel);
-		day.setVisible(true);
+		day.setVisible(true);   
 
 		controlPanel = new JPanel();
 		controlPanel.setLayout(new FlowLayout());
