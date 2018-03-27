@@ -17,6 +17,7 @@ public class Day{
 	private JButton seperately = new JButton("seperately");
 	private JButton done = new JButton("done");
 	private JTextField jtf = new JTextField(10); //textbox 
+	private JTextField state = new JTextField(2); //type two letter state code 
 	boolean buttonClick = false;
 
 	int Fs0 = 0;
@@ -79,7 +80,16 @@ public class Day{
 					if(ActionEvent b = true){
 						if(ActionEvent d = true){
 							int data = jtf.getText();
-							if(data <= Fs0)
+							if(data >= Fs0){
+								data * percent0 = federalTax;
+								//state info
+								data - federalTax = gross
+								system.out.println("gross wage for the day: " gross);
+								sysem.out.println("federal tax taken off net is: " federalTax);
+							}
+							if else(data >= Fs1){
+
+							}
 						}
 						else if(ActionEvent e = true){
 							int data = jtf.getText();
