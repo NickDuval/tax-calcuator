@@ -21,13 +21,13 @@ public class Day{
 	seperately.setBounds(600,600,300,300);
 	JButton done = new JButton("done");
 	done.setBounds(400,1000,100,30);
-	JTextField jtf = new JTextField(10); //textbox 
+	JTextField gross = new JTextField(7); //textbox 
 	JTextField state = new JTextField(2); //type two letter state code 
-	boolean buttonClick = false;
+	JTextField dependent = new JTextField(2); //number of dependents
 
 	int Fs0 = 0;
 	int Fs1 = 9526;
-	int Fs2 = 38701;
+	int Fs2 = 38700;
 	int Fs3 = 82501;
 	int Fs4 = 157501;
 	int Fs5 = 200001;
@@ -76,438 +76,6 @@ public class Day{
 	day.add(JBincome);
 	}
 
-//make tree map using binary to track which buttons pressed
-
-	public void doneButton(){
-		done.addActionListerner(new ActionListener(){
-			public void actionPreformed(ActionEvent a){
-				if(a.getActionCommand().equals("")){
-					if(ActionEvent b = true){
-						if(ActionEvent d = true){
-							int data = jtf.getText();
-							if(data >= Fs0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else if(ActionEvent e = true){
-							int data = jtf.getText();
-							if(data >= Fmj0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else if(ActionEvent f = true){
-							int data = jtf.getText();
-							if(data >= Fhoh0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else(ActionEvent g = true){
-							int data = jtf.getText();
-							if(data >= Fms0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}	
-					}
-
-					else(ActionEvent c = true){
-						if(ActionEvent d = true){
-							int data = jtf.getText();
-							if(data >= Fs0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fs6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else if(ActionEvent e = true){
-							int data = jtf.getText();
-							if(data >= Fmj0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fmj6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else if(ActionEvent f = true){
-							int data = jtf.getText();
-							if(data >= Fhoh0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fhoh6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}
-						else(ActionEvent g = true){
-							int data = jtf.getText();
-							if(data >= Fms0){
-								data * percent0 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms1){
-								data * percent1 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms2){
-								data * percent2 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms3){
-								data * percent3 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms4){
-								data * percent4 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms5){
-								data * percent5 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-							if else(data >= Fms6){
-								data * percent6 = federalTax;
-								//state info
-								data - federalTax = gross
-								system.out.println("gross wage for the day: " gross);
-								sysem.out.println("federal tax taken off net is: " federalTax);
-							}
-						}	
-					}
-				}
-			}
-		});
-	}
-
 	public void wageButton(){
 		JBwage.addActionListerner(new ActionListener(){
 			public void actionPreformed(ActionEvent b){
@@ -518,6 +86,310 @@ public class Day{
 					day.add(seperately);
 					day.remove(JBwage);
 					day.remove(JBincome);
+
+					public void singleButton(){
+						single.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent d){
+								if(d.getActionCommand().equals("single")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fs6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes singleButton
+
+					public void jointlyButton(){
+						jointly.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent e){
+								if(e.getActionCommand().equals("jointly")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fmj6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fsmj4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes jointlyButton
+
+					public void hohButton(){
+						hoh.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent f){
+								if(f.getActionCommand().equals("hoh")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fhoh6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes hohButton
+
+					public void seperateButton(){
+						seperately.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent g){
+								if(g.getActionCommand().equals("seperately")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fms6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes seperateButton
 				}
 			}
 		});
@@ -533,12 +405,317 @@ public class Day{
 					day.add(seperately);
 					day.remove(JBwage);
 					day.remove(JBincome);
+
+										public void singleButton(){
+						single.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent d){
+								if(d.getActionCommand().equals("single")){
+									system.out.println("please write your wage only in numbers.")
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fs6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fs0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes singleButton
+
+					public void jointlyButton(){
+						jointly.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent e){
+								if(e.getActionCommand().equals("jointly")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fmj6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fsmj4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fmj0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes jointlyButton
+
+					public void hohButton(){
+						hoh.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent f){
+								if(f.getActionCommand().equals("hoh")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fhoh6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fhoh0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes hohButton
+
+					public void seperateButton(){
+						seperately.addActionListerner(new ActionListener(){
+							public void actionPreformed(ActionEvent g){
+								if(g.getActionCommand().equals("seperately")){
+									system.out.println("please write your wage only in numbers");
+									day.add(jtf);
+									day.add(done);
+									day.remove(single);
+									day.remove(hoh);
+									day.remove(jointly);
+									day.remove(seperately);
+
+									if(gross >= Fms6){
+										gross * percent6 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms5){
+										gross * percent5 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms4){
+										gross * percent4 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms3){
+										gross * percent3 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms2){
+										gross * percent2 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms1){
+										gross * percent1 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else if(data >= Fms0){
+										gross * percent0 = federalTax;
+										//state info
+										gross - federalTax = net;
+										system.out.println("gross wage for the day: " + gross);
+										system.out.println("net wage for the day: " + net);
+										sysem.out.println("federal tax taken off net is: " + federalTax);
+									}
+									else{
+										system.out.println("error: use only numbers please! :)");
+									}
+								}
+							}
+						});
+					}//closes seperateButton
 				}
 			}
 		});
 	}
+}
 
-	public void singleButton(){
+/*	public void singleButton(){
 		single.addActionListerner(new ActionListener(){
 			public void actionPreformed(ActionEvent d){
 				if(d.getActionCommand().equals("single")){
@@ -597,3 +774,4 @@ public void jointlyButton(){
 			}
 		});
 	}
+*/
