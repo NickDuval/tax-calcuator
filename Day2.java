@@ -3,6 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
+import java.lang.System;
 
 public class Day2{
 	int wageTp = 0;
@@ -12,11 +13,25 @@ public class Day2{
 	int hohTp = 0;
 	int sepratelyTp = 0;
 	JFrame day;
+	Container container;
 	JPanel controlPanel;
 	JButton wageBT;
 	JButton incomeBT;
-
-
+	JButton singleBT;
+	JButton hohBT;
+	JButton jointlyBT;
+	JButton sepratelyBT;
+	JButton doneBT;
+	JButton homeBT;
+	JButton backBT;
+	JTextField grossTF;
+	JTextField hoursTF;
+	JTextField stateTF; //type two letter state code 
+	JTextField dependentTF; //number of dependents */
+	//preloaded panels
+	JPanel salaryJP;
+	JPanel filerConditionJP;
+	
 
 	int[] fs = {0, 9526, 38700, 82501, 157501, 200001, 500001};
 
@@ -31,6 +46,7 @@ public class Day2{
 	public static void main(String args[]){
 		Day2 Gui = new Day2();
 		Gui.showGui();
+		//day.getcontrolPanel().repaint();
 	}
 
 	public Day2(){
@@ -40,7 +56,7 @@ public class Day2{
 	private void prepareGUI(){
 		day = new JFrame("Day");
 		day.setSize(1000,1130);
-		day.setLayout(new GridLayout(4,1));
+		//day.setLayout(new GridLayout(4,1));
 		day.setLocationRelativeTo(null);
 		day.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		day.setResizable(false);
@@ -53,42 +69,130 @@ public class Day2{
 
 	private void showGui(){
 		day.setTitle("Tax App");
+
 		wageBT = new JButton("wage");
-		wageBT.setBounds(100,100,300,300); //button to choose whether or not to use hourly wage	
+		incomeBT = new JButton("income");
+		JButton singleBT = new JButton("single");
+		JButton hohBT = new JButton("HOH");
+		JButton jointlyBT = new JButton("jointly");
+		JButton sepratelyBT = new JButton("seprately");
+		JButton doneBT = new JButton("done");
+		JButton homeBT = new JButton("home");
+		JButton backBT = new JButton("back");
+		JTextField grossTF = new JTextField(7);
+		JTextField hoursTF = new JTextField(2);
+		JTextField stateTF = new JTextField(2); //type two letter state code 
+		JTextField dependentTF = new JTextField(2); //number of dependents */
+
+
+		wageBT.setBounds(100,100,300,300);
 		wageBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//salary();
+            	salary();
            		wageTp = 1;    
         	}
       	}); 
 		controlPanel.add(wageBT);
 
-		JButton income = new JButton("income");
-		incomeBT.setBounds(600,100,300,300); //or yearly income
+		incomeBT.setBounds(600,100,300,300);
 		incomeBT.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {     
-				//salary();
+				salary();
 				incomeTp = 1;    
 			}
 		}); 
 		controlPanel.add(incomeBT);
 
-		// JButton single = new JButton("single");
-		// single.setBounds(100,100,300,300);
-		// JButton hoh = new JButton("HOH");
-		// hoh.setBounds(600,100,300,300);
-		// JButton jointly = new JButton("jointly");
-		// jointly.setBounds(100,600,300,300);
-		// JButton seprately = new JButton("seprately");
-		// seprately.setBounds(600,600,300,300);
-		// JButton done = new JButton("done");
-		// done.setBounds(400,1000,100,30);	
-		// JButton home = new JButton("home");
-		// home.setBounds(850,1070,100,30);
-		// JTextField gross = new JTextField(7); //textbox 
-		// JTextField hours = new JTextField(2);
-		// JTextField state = new JTextField(2); //type two letter state code 
-		// JTextField dependent = new JTextField(2); //number of dependents */
+		homeBT.setBounds(850,1070,100,30);
+		homeBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//go to start screen    
+        	}
+      	}); 
+      	controlPanel.add(homeBT);
+
+      	backBT.setBounds(50,1070,100,30);
+      	backBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//go back one page   
+        	}
+      	}); 
+      	controlPanel.add(backBT);
+
 		day.setVisible(true);
 	}
+
+	public void salary(){
+		salaryJP = new JPanel();
+		salaryJP.setLayout(new FlowLayout());
+		container.removeAll();
+
+		singleBT.setBounds(100,100,300,300);
+		singleBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//filerCondition();
+           		singleTp = 1;    
+        	}
+      	});
+		salaryJP.add(singleBT);
+		
+		hohBT.setBounds(600,100,300,300);
+		hohBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//filerCondition();
+           		hohTp = 1;    
+        	}
+      	});
+      	salaryJP.add(hohBT);
+
+		jointlyBT.setBounds(100,600,300,300);
+		jointlyBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//filerCondition();
+           		jointlyTp = 1;    
+        	}
+      	}); 
+      	salaryJP.add(jointlyBT);
+
+		sepratelyBT.setBounds(600,600,300,300);
+		sepratelyBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//filerCondition();
+           		sepratelyTp = 1;    
+        	}
+      	}); 
+		salaryJP.add(sepratelyBT); 
+
+		homeBT.setBounds(850,1070,100,30);
+		homeBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//go to start screen    
+        	}
+      	}); 
+      	salaryJP.add(homeBT);
+
+      	backBT.setBounds(50,1070,100,30);
+      	backBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//go back one page   
+        	}
+      	}); 
+      	salaryJP.add(backBT);
+
+      	container.add(salaryJP);
+      	container.setVisible(true);
+	}
+
+
+	// public void filerCondition(){
+	// 	System.out.println("what is your gorss hourly wage? (only in numbers)");
+	// 	day.add(grossTF);
+	// 	System.out.println("how many hours did you work today? (only in numbers)");
+	// 	day.add(hoursTF);
+	// 	day.add(doneBT);
+	// 	day.remove(singleBT);
+	// 	day.remove(hohBT);
+	// 	day.remove(jointlyBT);
+	// 	day.remove(sepratelyBT);
+	// }
 }
