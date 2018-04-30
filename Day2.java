@@ -13,8 +13,7 @@ public class Day2{
 	int hohTp = 0;
 	int sepratelyTp = 0;
 	JFrame day;
-	Container container;
-	JPanel controlPanel;
+	JLayeredPane controlPanel;
 	JButton wageBT;
 	JButton incomeBT;
 	JButton singleBT;
@@ -61,10 +60,12 @@ public class Day2{
 		day.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		day.setResizable(false);
 
-		controlPanel = new JPanel();
+		controlPanel = new JLayeredPane();
 		controlPanel.setLayout(new FlowLayout());
 
 		day.add(controlPanel);
+		day.add(salaryJP);
+		day.add(filerConditionJP);
 	}	
 
 	private void showGui(){
@@ -120,13 +121,15 @@ public class Day2{
       	controlPanel.add(backBT);
 
 		day.setVisible(true);
+		controlPanel.setVisible(true);
+		salaryJP.setVisible(false);
+		filerConditionJP.setVisible(false);
 	}
 
 	public void salary(){
 		salaryJP = new JPanel();
 		salaryJP.setLayout(new FlowLayout());
-		container.removeAll();
-
+		
 		singleBT.setBounds(100,100,300,300);
 		singleBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
@@ -177,10 +180,9 @@ public class Day2{
             	//go back one page   
         	}
       	}); 
-      	salaryJP.add(backBT);
 
-      	container.add(salaryJP);
-      	container.setVisible(true);
+      	controlPanel.setVisible(false);
+		salaryJP.setVisible(true);
 	}
 
 
