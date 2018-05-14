@@ -13,7 +13,7 @@ public class Day2{
 	int hohTp = 0;
 	int sepratelyTp = 0;
 	JFrame day;
-	JLayeredPane controlPanel;
+	JPanel controlPanel;
 	JButton wageBT;
 	JButton incomeBT;
 	JButton singleBT;
@@ -35,7 +35,7 @@ public class Day2{
 	int[] fs = {0, 9526, 38700, 82501, 157501, 200001, 500001};
 
 	int[] fhoh = {0, 13601, 51801, 82501, 157501, 200001, 500001};
-
+ 
 	int[] fmj = {0, 19051, 77401, 165001, 315001, 400001, 600001};
 
 	int[] fms = {0, 9526, 38700, 82501, 157501, 200001, 300001};
@@ -45,7 +45,6 @@ public class Day2{
 	public static void main(String args[]){
 		Day2 Gui = new Day2();
 		Gui.showGui();
-		//day.getcontrolPanel().repaint();
 	}
 
 	public Day2(){
@@ -56,12 +55,9 @@ public class Day2{
 		day = new JFrame("Day");
 		day.setSize(1000,1130);
 		//day.setLayout(new GridLayout(4,1));
-		day.setLocationRelativeTo(null);
+		//day.setLocationRelativeTo(null);
 		day.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		day.setResizable(false);
-
-		controlPanel = new JLayeredPane();
-		controlPanel.setLayout(new FlowLayout());
 
 		day.add(controlPanel);
 		day.add(salaryJP);
@@ -107,7 +103,8 @@ public class Day2{
 		homeBT.setBounds(850,1070,100,30);
 		homeBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//go to start screen    
+            	//go to start screen  
+            	//go to choose screen
         	}
       	}); 
       	controlPanel.add(homeBT);
@@ -116,6 +113,7 @@ public class Day2{
       	backBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
             	//go back one page   
+            	//to the choice of day week month or year
         	}
       	}); 
       	controlPanel.add(backBT);
@@ -128,12 +126,11 @@ public class Day2{
 
 	public void salary(){
 		salaryJP = new JPanel();
-		salaryJP.setLayout(new FlowLayout());
 		
 		singleBT.setBounds(100,100,300,300);
 		singleBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//filerCondition();
+            	filerCondition();
            		singleTp = 1;    
         	}
       	});
@@ -142,7 +139,7 @@ public class Day2{
 		hohBT.setBounds(600,100,300,300);
 		hohBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//filerCondition();
+            	filerCondition();
            		hohTp = 1;    
         	}
       	});
@@ -151,7 +148,7 @@ public class Day2{
 		jointlyBT.setBounds(100,600,300,300);
 		jointlyBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//filerCondition();
+            	filerCondition();
            		jointlyTp = 1;    
         	}
       	}); 
@@ -160,7 +157,7 @@ public class Day2{
 		sepratelyBT.setBounds(600,600,300,300);
 		sepratelyBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//filerCondition();
+            	filerCondition();
            		sepratelyTp = 1;    
         	}
       	}); 
@@ -177,7 +174,7 @@ public class Day2{
       	backBT.setBounds(50,1070,100,30);
       	backBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            	//go back one page   
+            	controlPanel();   
         	}
       	}); 
 
@@ -186,15 +183,32 @@ public class Day2{
 	}
 
 
-	// public void filerCondition(){
-	// 	System.out.println("what is your gorss hourly wage? (only in numbers)");
-	// 	day.add(grossTF);
-	// 	System.out.println("how many hours did you work today? (only in numbers)");
-	// 	day.add(hoursTF);
-	// 	day.add(doneBT);
-	// 	day.remove(singleBT);
-	// 	day.remove(hohBT);
-	// 	day.remove(jointlyBT);
-	// 	day.remove(sepratelyBT);
-	// }
+	public void filerCondition(){
+		filerConditionJP = new JPanel();
+
+		System.out.println("what is your gorss hourly wage? (only in numbers)");
+		day.add(grossTF);
+		System.out.println("how many hours did you work today? (only in numbers)");
+		day.add(hoursTF);
+		day.add(doneBT);
+
+
+		homeBT.setBounds(850,1070,100,30);
+		homeBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	//go to start screen    
+        	}
+      	}); 
+      	salaryJP.add(homeBT);
+
+      	backBT.setBounds(50,1070,100,30);
+      	backBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	salary();   
+        	}
+      	}); 
+
+		salaryJP.setVisible(false);
+		filerConditionjp.setVisible(true);
+	}
 }
