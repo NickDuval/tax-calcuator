@@ -166,8 +166,7 @@ public class Day2{
 		homeBT.setBounds(850,1070,100,30);
 		homeBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-            		//go to start screen 
-			//clear data
+            	//go to start screen    
         	}
       	}); 
       	salaryJP.add(homeBT);
@@ -175,8 +174,7 @@ public class Day2{
       	backBT.setBounds(50,1070,100,30);
       	backBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
-			controlPanel();   
-			//clear data
+            	controlPanel();   
         	}
       	}); 
 
@@ -187,36 +185,36 @@ public class Day2{
 
 	public void filerCondition(){
 		filerConditionJP = new JPanel();
-		if(wageTp = 1){
-			System.out.println("what is your gorss hourly wage? (only in numbers)");
-			day.add(grossTF);
-			System.out.println("how many hours did you work today? (only in numbers)");
-			day.add(hoursTF);
-			day.add(doneBT);
-		}
-		if(incomeTp = 1){
-			System.out.println("what is your gorss yearly income? (only in numbers)");
-			day.add(grossTF);
-			System.out.println("how many hours did you work today? (only in numbers)");
-			day.add(hoursTF);
-			day.add(doneBT);
-		}
 
+		System.out.println("what is your gorss hourly wage? (only in numbers)");
+		day.add(grossTF);
+		System.out.println("how many hours did you work today? (only in numbers)");
+		day.add(hoursTF);
+
+		day.add(doneBT);
+		doneBT.setBounds();
+		doneBT.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				//do calculations
+			}
+		});
+		filerConditionJP.add(doneBT)
 
 		homeBT.setBounds(850,1070,100,30);
 		homeBT.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {     
             	//go to start screen    
         	}
-      		}); 
-      		salaryJP.add(homeBT);
+      	}); 
+      	filerConditionJP.add(homeBT);
 
-      		backBT.setBounds(50,1070,100,30);
-      		backBT.addActionListener(new ActionListener() {
-        		public void actionPerformed(ActionEvent e) {     
-            		salary();   
-        		}
-     	 	}); 
+      	backBT.setBounds(50,1070,100,30);
+      	backBT.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {     
+            	salary();   
+        	}
+      	}); 
+      	filerConditionJP.add(backBT);
 
 		salaryJP.setVisible(false);
 		filerConditionjp.setVisible(true);
